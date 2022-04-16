@@ -1,0 +1,14 @@
+<h1><%= @team.name %></h1>
+
+
+    <%= image_tag @team.image, :class =>'thumb' if @team.image.present? %>
+        <ul>
+            <li> Name: <%=  @team.name %></li>
+            <li>Country: <%= @team.country %></li>
+            <li>Founded: <%= @team.dob%></li>
+        </ul>
+
+        <div class="controls">
+            <%= link_to "Edit stats", edit_team_path(@team)%>
+            <%= link_to "Delete Team", @team, :method => 'delete', :data =>{ ;confirm=> 'Are you sure?'}%>
+        </div>
