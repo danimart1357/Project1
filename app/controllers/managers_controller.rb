@@ -35,7 +35,7 @@ class ManagersController < ApplicationController
 
   private 
   def manager_params 
-    params.require(:manager).permit(:name, :team, :trophies, :nationality, :image)
+    params.require(:manager).permit(:name, :team, :trophies, :nationality, :image, :team_id)
   end
 
 end

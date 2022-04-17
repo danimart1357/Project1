@@ -15,5 +15,8 @@
       <%= f.label :image%>
     <%= f.url_field :image, :required => true %>
 
+    <%= f.label :team_id %>
+    <%= f.select :team_id, Team.pluck(:name, :id)%>
+
     <%= f.submit%>
 <%end%>
