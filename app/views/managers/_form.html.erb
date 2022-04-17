@@ -1,0 +1,19 @@
+
+<%= form_for @manager do |f| %>
+    <%= f.label :name, :required => true  %>
+    <%= f.text_field :name %>
+
+    <%= f.label :team  %>
+    <%= f.text_field :team %>
+
+    <%= f.label :trophies%>
+    <%= f.text_field :trophies %>
+
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality%>
+
+      <%= f.label :image%>
+    <%= f.url_field :image, :required => true %>
+
+    <%= f.submit%>
+<%end%>

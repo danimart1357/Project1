@@ -9,3 +9,8 @@
     <li>Country of birth: <%= @manager.nationality%></li>
 
 </ul>
+
+<div class="controls">
+<%= link_to "Edit Manager", edit_manager_path(@manager)%>
+<%= link_to "Delete Manager", @manager, :method=> 'delete' %>
+</div>
