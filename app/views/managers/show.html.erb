@@ -1,2 +1,11 @@
-<h1>Managers#show</h1>
-<p>Find me in app/views/managers/show.html.erb</p>
+<h1><%= @manager.name%></h1>
+
+<%= image_tag @manager.image, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @manager.name%></li>
+    <li>Team: <%= @manager.team%></li>
+    <li>Trophies <%= @manager.trophies%></li>
+    <li>Country of birth: <%= @manager.nationality%></li>
+
+</ul>
