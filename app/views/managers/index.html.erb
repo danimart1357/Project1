@@ -1,0 +1,15 @@
+<h1>All Managers</h1>
+
+
+   <% @managers.each do |manager| %>
+    
+    <%= image_tag manager.image, :class =>'thumb' if manager.image.present? %>
+        <ul>
+            <li> Name: <%= link_to manager.name, manager %></li>
+            <li>Team: <%= manager.team %></li>
+            <li>Trophies: <%= manager.trophies%></li>
+            <li>Country of birth: <%= manager.nationality%></li>
+        
+        </ul>
+<% end%>
+  
