@@ -4,11 +4,13 @@ class PlayersController < ApplicationController
   end
 
   def new
+    @player = Player.new
   end
 
   def edit
   end
 
   def show
+    @player = Player.find params[:id]
   end
 end

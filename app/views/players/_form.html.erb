@@ -1,0 +1,27 @@
+<%= form_for @player do |f| %>
+    <%= f.label :title, :required => true  %>
+    <%= f.text_field :title %>
+
+    <%= f.label :year  %>
+    <%= f.text_field :year %>
+
+    <%= f.label :manager%>
+    <%= f.text_field :manager %>
+
+    <%= f.label :team %>
+    <%= f.text_field :team%>
+
+     <%= f.label :goals %>
+    <%= f.text_field :goals%>
+
+     <%= f.label :trophy %>
+    <%= f.text_field :trophy%>
+
+      <%= f.label :image%>
+    <%= f.url_field :image, :required => true %>
+
+    <%= f.label :team_id %>
+    <%= f.select :team_id, Team.pluck(:name, :id)%>
+
+    <%= f.submit%>
+<%end%>

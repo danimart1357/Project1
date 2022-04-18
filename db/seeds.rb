@@ -19,8 +19,8 @@ puts "#{ Manager.count } managers created."
 Player.destroy_all
 
 Player.create(:title => 'Cristiano Ronaldo', :year => "05/02/1985", :manager => "Erik Ten Hag", :team => 'Manchester United', :goals => '1008', :trophy => '24', :image => 'https://i2-prod.dailystar.co.uk/sport/football/article26699923.ece/ALTERNATES/n615/0_GettyImages-1239866104.jpg')
-Player.create(:title => 'Lionel Messi',  :year => "05/02/1985",  :manager => "Mauricio Pochettino", :team => 'Paris Saint germain', :goals => '830', :trophy => '20', :image => 'https://i2-prod.dailystar.co.uk/sport/football/article26699923.ece/ALTERNATES/n615/0_GettyImages-1239866104.jpg')
-Player.create(:title => 'Dani Alves', :year => "05/02/1985",  :manager => "Xavi", :team => 'Barcelona', :goals => '108', :trophy => '36', :image => 'https://i2-prod.dailystar.co.uk/sport/football/article26699923.ece/ALTERNATES/n615/0_GettyImages-1239866104.jpg')
-Player.create(:title => 'Tammy Abrahams',  :year => "05/02/1985",  :manager => "Jose Mourinho", :team => 'A.S Roma', :goals => '55', :trophy => '2', :image => 'https://i2-prod.dailystar.co.uk/sport/football/article26699923.ece/ALTERNATES/n615/0_GettyImages-1239866104.jpg')
+Player.create(:title => 'Lionel Messi',  :year => "05/02/1985",  :manager => "Mauricio Pochettino", :team => 'Paris Saint germain', :goals => '830', :trophy => '20', :image => 'https://d3nfwcxd527z59.cloudfront.net/content/uploads/2022/04/15100927/Lionel-Messi-PSG2.jpg')
+Player.create(:title => 'Dani Alves', :year => "05/02/1985",  :manager => "Xavi", :team => 'Barcelona', :goals => '108', :trophy => '36', :image => 'https://s.hs-data.com/bilder/spieler/gross/12541.jpg')
+Player.create(:title => 'Tammy Abrahams',  :year => "05/02/1985",  :manager => "Jose Mourinho", :team => 'A.S Roma', :goals => '55', :trophy => '2', :image => 'https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1254x513:1256x511)/origin-imgresizer.eurosport.com/2021/10/04/3231718-66151628-2560-1440.jpg')
 
 puts "#{ Player.count } Players created."

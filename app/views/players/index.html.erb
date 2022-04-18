@@ -5,7 +5,7 @@
     
     <%= image_tag player.image, :class =>'thumb' if player.image.present? %>
         <ul>
-            <li> Name: <%= player.title %></li>
+            <li> Name: <%= link_to player.title, player %></li>
             <li>Team: <%= player.team %></li>
             
         
