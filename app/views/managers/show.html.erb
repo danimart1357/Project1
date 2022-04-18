@@ -12,6 +12,11 @@
 
 </ul>
 
+<% @manager.players.each do |player|%>
+            <%= link_to image_tag(player.image, :class=> 'thumb'), player %>
+        <%end%>
+
+
 <div class="controls">
 <%= link_to "Edit Manager", edit_manager_path(@manager)%>
 <%= link_to "Delete Manager", @manager, :method=> 'delete' %>
