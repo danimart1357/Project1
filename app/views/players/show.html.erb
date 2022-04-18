@@ -4,11 +4,12 @@
 
 <ul>
     <li>Name: <%= @player.title%></li>
-    <%if @player.team.present?%>
-        <li>Team: <%= link_to @player.team, @player.team%> </li>
+    <%if @player.manager.present?%>
+        <li>Manager: <%= link_to @player.manager, @player.manager%> </li>
    <%end%>
     <li>Trophies: <%= @player.trophy%></li>
     <li>Birthday <%= @player.year%></li>
+    <li>Team: <%= @player.team%></li>
 
 </ul>
 
