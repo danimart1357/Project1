@@ -24,3 +24,10 @@ Player.create(:title => 'Dani Alves', :year => "05/02/1985",  :manager => "Xavi"
 Player.create(:title => 'Tammy Abrahams',  :year => "05/02/1985",  :manager => "Jose Mourinho", :team => 'A.S Roma', :goals => '55', :trophy => '2', :image => 'https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1254x513:1256x511)/origin-imgresizer.eurosport.com/2021/10/04/3231718-66151628-2560-1440.jpg')
 
 puts "#{ Player.count } Players created."
+
+
+Users.destroy_all
+
+u1= User.create :email => 'dan@gmail.com', :password => 'chicken'
+u2= User.create :email => 'hugh@ga.co', :password => 'chicken'
+puts "#{ User.count } Users created."
