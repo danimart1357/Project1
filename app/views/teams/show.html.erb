@@ -12,6 +12,9 @@
             <%= link_to image_tag(manager.image, :class=> 'thumb'), manager %>
         <%end%>
 
+      
+      <%= link_to "All Players", players_path%>
+      <%= link_to "New Players", new_player_path%>
         <div class="controls">
             <%= link_to "Edit stats", edit_team_path(@team)%>
             <%= link_to "Delete Team", @team, :method => 'delete'%>

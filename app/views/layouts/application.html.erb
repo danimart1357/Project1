@@ -11,17 +11,24 @@
 
   <body>
   <nav>
-
-  </nav>
+ </nav>
+  
     <div class="container">
+    <%= link_to "Home Page", root_path %>
+    ||
+    <%= link_to "Sign Up", new_user_path%>
+||
+
       <%= link_to "All Teams", teams_path %>
       <%= link_to "New Teams", new_team_path%>
       ||
-      <%= link_to "All Managers", managers_path %>
+    <%= link_to "All Managers", managers_path %>
       <%= link_to "New Managers", new_manager_path%>
       ||
       <%= link_to "All Players", players_path%>
       <%= link_to "New Players", new_player_path%>
+
+
     <%= yield %>
     </div>
     
