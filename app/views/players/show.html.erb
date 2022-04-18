@@ -5,7 +5,7 @@
 <ul>
     <li>Name: <%= @player.title%></li>
     <%if @player.manager.present?%>
-        <li>Manager: <%= link_to @player.manager, @player.manager%> </li>
+        <li>Manager: <%= link_to @player.manager.name, @player.manager%> </li>
    <%end%>
     <li>Trophies: <%= @player.trophy%></li>
     <li>Birthday <%= @player.year%></li>
