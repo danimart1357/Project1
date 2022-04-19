@@ -9,10 +9,10 @@ puts "#{Team.count} teams created"
 
 Manager.destroy_all
 
-m1= Manager.create(:name => 'Erik Ten Hag', :team => 'Manchester United', :trophies => '4', :nationality => 'Dutch', :image => 'https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article23672801.ece/ALTERNATES/s615/0_GettyImages-1384335693.jpg')
-m2= Manager.create(:name => 'Mauricio Pochettino', :team => 'Paris Saint Germain', :trophies => '0', :nationality => 'Argentina', :image => 'https://cdn.images.express.co.uk/img/dynamic/67/590x/1595922_1.jpg?r=1649924398060')
-m3= Manager.create(:name => 'Xavi', :team => 'FC Barcelona', :trophies => '0', :nationality => 'Spain', :image => 'https://cdn.vox-cdn.com/thumbor/K-LvMCy6BdA4MU2Xreif1cjjxd0=/0x0:1999x3000/1200x800/filters:focal(907x475:1225x793)/cdn.vox-cdn.com/uploads/chorus_image/image/70733888/1390710675.0.jpg')
-m4= Manager.create(:name => 'Jose Mourinho', :team => 'A.S Roma', :trophies => '22', :nationality => 'Portugal', :image => 'https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt54c955ea5169b3d4/61abc9e8367ec1122e8f7a8f/Jose_Mourinho_Roma_Inter_2021-22.jpg?auto=webp&format=jpg&quality=100')
+m1= Manager.create(:name => 'Erik Ten Hag', :trophies => '4', :nationality => 'Dutch', :image => 'https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article23672801.ece/ALTERNATES/s615/0_GettyImages-1384335693.jpg')
+m2= Manager.create(:name => 'Mauricio Pochettino',  :trophies => '0', :nationality => 'Argentina', :image => 'https://cdn.images.express.co.uk/img/dynamic/67/590x/1595922_1.jpg?r=1649924398060')
+m3= Manager.create(:name => 'Xavi', :trophies => '0', :nationality => 'Spain', :image => 'https://cdn.vox-cdn.com/thumbor/K-LvMCy6BdA4MU2Xreif1cjjxd0=/0x0:1999x3000/1200x800/filters:focal(907x475:1225x793)/cdn.vox-cdn.com/uploads/chorus_image/image/70733888/1390710675.0.jpg')
+m4= Manager.create(:name => 'Jose Mourinho',  :trophies => '22', :nationality => 'Portugal', :image => 'https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt54c955ea5169b3d4/61abc9e8367ec1122e8f7a8f/Jose_Mourinho_Roma_Inter_2021-22.jpg?auto=webp&format=jpg&quality=100')
 
 puts "#{ Manager.count } managers created."
 
@@ -37,3 +37,10 @@ m1.players << p1
 m2.players << p2
 m3.players << p3
 m4.players << p4
+
+puts "teams and managers"
+
+t1.managers << m1
+t2.managers << m2
+t3.managers << m3
+t4.managers << m4

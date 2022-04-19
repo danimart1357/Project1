@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2022_04_18_131934) do
 
   create_table "managers", force: :cascade do |t|
     t.text "name"
-    t.text "team"
     t.text "trophies"
     t.text "nationality"
     t.text "image"
