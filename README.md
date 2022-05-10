@@ -9,6 +9,7 @@
   <li> Ruby on Rails v4.2</li>
   <li> PostgreSQL </li>
   <li> CSS </li>
+  <li> HTML</li>
   
  </ul>
  
